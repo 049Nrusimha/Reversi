@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#status {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#game-over-message {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-gap: 2px;
+    background-color: #008000;
+    border: 2px solid #000;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #008000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.black {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.white {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/* Highlight valid move cells */
+/* Highlight valid move cells with a golden border */
+.valid-move {
+    border: 2px solid gold; /* Golden border for valid moves */
+}
+
