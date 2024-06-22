@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversi Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Reversi</h1>
+        <div id="status"></div>
+        <div id="scores">
+            <div id="black-score">Black: 2</div>
+            <div id="white-score">White: 2</div>
+        </div>
+        <div class="board"></div>
+        <div id="game-over-message"></div>
+    </div>
+    <script>
+        if (performance.navigation.type === 1) {
+            window.location.href = 'index.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

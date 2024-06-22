@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2e8b57; /* Sea green */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #8b4513; /* Darker brown */
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
+
+#status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#scores {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#black-score,
+#white-score {
+    margin: 5px 0;
+}
+
+#game-over-message {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+    background-color: #006400; /* Dark green */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #228B22; /* Forest green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.piece {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.valid-move {
+    background-image: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+}
+
